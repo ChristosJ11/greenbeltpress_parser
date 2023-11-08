@@ -1,0 +1,366 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #B4d4db;
+    /*linear-gradient(to bottom, #ccf5ed, #b6e3da, #70dcce, #80bac6, #264b53);*/
+    margin: 0;
+    padding: 0;
+}
+
+.blank{
+    padding-top: 50px;
+}
+.title {
+    text-align: center;
+    /* padding: 70px; */
+    font-size: 52px;
+    font-weight: 700;
+    width: 1150px;
+    /* margin-bottom: 300px; */
+    letter-spacing: 0.025em;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .25em solid #9370D0; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .03em; /* Adjust as needed */
+    animation: 
+        typing 4.0s steps(35, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+}
+    
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #9370D0; }
+}
+
+.maincontainer {
+    display: flex;
+    justify-content: left;
+    padding-left: 85px;
+    padding-top: 125px;
+    align-items: center;
+    margin: 0;
+    width: 2000px;
+}
+
+.maincontainer2 {
+    display: flex;
+    justify-content: left;
+    padding-left: 85px;
+    align-items: center;
+    margin: 0;
+    width: 1000px;
+}
+
+.mainbox {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1); /* Transparent background color */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 24px;
+    width: 550px;
+    height: 300px;
+    z-index: 1; /* Place text above the animation */
+}
+
+.percent {
+    text-align: center;
+    /* padding: 20px; */
+    margin-top: -150px;
+    background-color: rgba(255, 255, 255, 0); /* Transparent background color */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 24px;
+    width: 550px;
+    height: 300px;
+}
+
+/* #type1 {
+    padding-left: 300px;
+    margin-top: 0%;
+}
+
+#type2 {
+    padding-left: 300px;
+    padding-bottom: 40px; 
+}
+
+#type3 {
+    padding-left: 300px;
+} */
+
+#psign {
+    font-size: 56px;
+    font-weight: 700;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+#ptext {
+    margin-top: 0;
+}
+
+.header {
+    background: #373437; /* Background gradient for animation */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; 
+
+    /* background-color: #373437;
+    color: #fff;
+    text-align: center;
+    padding: 20px; */
+}
+
+.list1{
+    padding-top: 50px;
+    padding-left: 1px;
+    word-spacing: 20px;
+    font-weight: 700;
+    
+}
+
+.list1 span:nth-child(1) {color: #7f61a1;}
+.list1 span:nth-child(2) {color: #9e5ee3;}
+.list1 span:nth-child(3) {color: #ca9bff;}
+.list1 span:nth-child(4) {color: #442c60;}
+
+
+
+#pie-chart {
+    width: 35%;
+    height: 63%;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 175px;
+    background: conic-gradient(
+        #7f61a1 0% 25%,
+        #543f6a 25% 50%,
+        #ca9bff 50% 75%,
+        #442c60 75% 100%
+    );
+}
+
+.category {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    text-align: center;
+    line-height: 100px;
+}
+
+#category1 {
+    transform: rotate(0deg);
+}
+
+#category2 {
+    transform: rotate(90deg);
+}
+
+#category3 {
+    transform: rotate(180deg);
+}
+
+#category4 {
+    transform: rotate(270deg);
+}
+
+
+
+@keyframes windStrands {
+    0% {
+        transform: translateY(0);
+        background-position: 0 -100%; /* Start from the top */
+    }
+    100% {
+        transform: translateY(100%);
+        background-position: 0 100%; /* End at the bottom */
+    }
+}
+
+h1 {
+    vertical-align: top;
+    margin-top: 5px;
+    height: 1px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header-text {
+    font-size: 36px;
+    color: white;
+    position: relative;
+    z-index: 1; /* Place text above the animation */
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Use the same height as the header */
+    background: linear-gradient(180deg, transparent 10%, rgba(255, 255, 255, 0.2) 30%); /* Strands effect (top to bottom) */
+    animation: windStrands 3s linear 0.06s 1 normal forwards; /* Animation runs once and keeps end effect */
+}
+
+.header-image {
+    text-align: right; /* Align content to the right within the header */
+    /* position: relative; */
+}
+
+#logo {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain the image's aspect ratio */
+    position: absolute;
+    bottom: 775px; /* Adjust the distance from the top as needed */
+    right: 10px; /* Adjust the distance from the right as needed */
+    width: 85px;
+}
+
+#gif {
+    width: 15%; /* Adjust the width as needed */
+    height: 15%; /* Maintain the image's aspect ratio */
+    position: relative;
+    bottom: 200px; /* Adjust the distance from the top as needed */
+    right: 275px; /* Adjust the distance from the right as needed */
+}
+
+  
+
+
+/* Fish Animation */
+svg#fish {
+    top: 5em;
+  }
+  svg.fish{
+    overflow: hidden;
+  }
+  
+  @-webkit-keyframes swim
+  {
+      0% {margin-left: -235px}
+      90% {margin-left: 100%;}
+      100% {margin-left: 100%;}
+  }
+  
+  @keyframes swim
+  {
+      0% {margin-left: 235px}
+      70% {margin-left: 100%;}
+      100% {margin-left: 100%;}
+  }
+  
+  .fish{
+      width: 235px;
+      height: 104px;
+      margin-top: 450px;
+      position: absolute;	
+      animation: swim 20s;
+      -webkit-animation: swim 11s;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+  }
+  
+  svg #fish1,
+  svg #fish2,
+  svg #fish3,
+  svg #fish4,
+  svg #fish5,
+  svg #fish6 {
+  fill:#528484;
+    
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  svg #fish2{
+      animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s;
+  }
+  
+  svg #fish3{
+      animation-delay: 0.2s;
+      -webkit-animation-delay: 0.2s;
+  }
+  
+  svg #fish4{
+      animation-delay: 0.4s;
+      -webkit-animation-delay: 0.4s;
+  }
+  
+  svg #fish5{
+      animation-delay: 0.1s;
+      -webkit-animation-delay: 0.1s;
+  }
+  
+  svg #fish6{
+      animation-delay: 0.3s;
+      -webkit-animation-delay: 0.3s;
+  }
+  
+  /**/
+  @-moz-keyframes bounce {
+    0%, 50%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25% {
+      -moz-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    75% {
+      -moz-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    0%, 50%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    75% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+  }
+  @keyframes bounce {
+    0%, 50%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25% {
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+    75% {
+      -moz-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+  }

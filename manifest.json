@@ -1,0 +1,17 @@
+{
+    "name": "LEB-Rewriter",
+    "description": "rewrites the web page so you can copy the text for greenbelt book store",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action" : {
+        "default_popup" :  "popup.html",
+        "default_icon" : "logo.png"
+    },
+    "content_scripts":[{
+      "matches": ["https://mail.google.com/mail/u/0/#inbox"],
+      "css": ["my-styles.css"]
+      
+    }],
+    "permissions": ["activeTab", "scripting"]
+
+}

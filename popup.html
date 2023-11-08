@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Gmail Email Monitor</title>
+  <style>
+    /* Add your CSS styles here to customize the popup appearance */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 400px;
+      padding: 10px;
+    }
+  
+  </style>
+</head>
+<body>
+  <img src = "logo.png" alt = "Image can't show" width="50" height="50">
+  <h1>Phish-Net</h1>
+  <p>It's a no phishing zone here. </p>
+  <div class = 'center'>
+    <button id="scrapeEmails">Let's Go Phishing</button>
+    <ul id = "emailList"></ul>
+    <script src = "popup.js"></script>
+    
+
+  </div>
+ 
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gmail Email Monitor</title>
+  <style>
+    /* Add your CSS styles here to customize the popup appearance */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-height: auto;
+      max-width: auto;
+      min-height: 300px;
+      min-width: 500px;
+      border-radius: 10px; /* Adjust the value to control the corner roundness */
+      background-color: #f5f5f5; /* Optional background color */
+      padding: 10px;
+    }
+
+    .center {
+      
+    }
+
+     /* Style the button */
+     #scrapeEmails {
+      background-color: #007BFF; /* Button background color */
+      color: #fff; /* Button text color */
+      padding: 8px 16px; /* Adjust the padding to make the button smaller */
+      font-size: 16px; /* Adjust the font size to make the button smaller */
+      border: none;
+      border-radius: 5px; /* Adjust the value to control the corner roundness */
+      cursor: pointer;
+    }
+
+    #scrapeEmails:hover {
+      background-color: #0056b3; /* Change the background color on hover */
+    }
+
+    #svgIconContainer {
+      position: relative;
+      top: 10px;
+      right: -60px;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+ 
+
+
+  <div class="center">
+    <h1>LEB Parser</h1>
+  </div>
+  
+  <div class="center">
+    <p id="placeholder">wtf is wrong with u</p>
+    <button id="parseButton">Parse</button>
+    <ul id="emailList"></ul>
+    <script src="popup.js"></script>
+  </div>
+</body>
+</html>
+  

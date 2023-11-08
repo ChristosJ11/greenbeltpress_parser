@@ -1,0 +1,7 @@
+Stats Page:
+"We've stopped (insert number) scam attempts on your account"
+Possible Gmail API: https://github.com/KartikTalwar/gmail.js/tree/master
+most frequent address
+# of phishing emails
+% of emails as phishing
+3 categories: Financial Scam, passwords, identity theft
